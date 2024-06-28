@@ -45,20 +45,20 @@ fun LoginScreen(){
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Image(painter = painterResource(id = R.drawable.a), contentDescription = "Login image", modifier = Modifier.size(200.dp))
+        Image(painter = painterResource(id = R.drawable.images), contentDescription = "Login image", modifier = Modifier.size(200.dp))
         
-        Text(text = "Welcome Back", fontSize = 28.sp, fontWeight = FontWeight.Bold)
+        Text(text = "Selamat Datang", fontSize = 28.sp, fontWeight = FontWeight.Bold)
         
         Spacer(modifier = Modifier.height(4.dp))
         
-        Text(text = "Login to your account")
+        Text(text = "Login ke akun anda")
         
         Spacer(modifier = Modifier.height(16.dp))
         
         OutlinedTextField(value = email, onValueChange = {
             email = it
         }, label = {
-            Text(text = "Email address")
+            Text(text = "Email")
         })
         
         Spacer(modifier = Modifier.height(16.dp))
@@ -79,13 +79,13 @@ fun LoginScreen(){
         
         Spacer(modifier = Modifier.height(32.dp))
         
-        Text(text = "Forgot Password?", modifier = Modifier.clickable { 
+        Text(text = "Lupa Password?", modifier = Modifier.clickable {
             
         })
         
         Spacer(modifier = Modifier.height(32.dp))
         
-        Text(text = "Or sign in with")
+        Text(text = "Atau login dengan")
 
         Row(
             modifier = Modifier
